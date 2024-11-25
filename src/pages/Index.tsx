@@ -1,5 +1,6 @@
 import { FloatingElements } from "@/components/FloatingElements";
 import { FavoriteThings } from "@/components/FavoriteThings";
+import { StarGame } from "@/components/StarGame";
 import { Star } from "lucide-react";
 
 const Index = () => {
@@ -15,6 +16,13 @@ const Index = () => {
           </h1>
           <p className="text-2xl text-gray-600">Welcome to My Magical World!</p>
         </div>
+
+        <section className="mb-16">
+          <h2 className="font-bubblegum text-4xl text-center mb-8 text-vibrant-purple">
+            Play with Me!
+          </h2>
+          <StarGame />
+        </section>
 
         <section>
           <h2 className="font-bubblegum text-4xl text-center mb-8 text-vibrant-purple">
