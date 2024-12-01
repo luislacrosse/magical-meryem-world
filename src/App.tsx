@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Game from "./pages/Game";
 import Vocabulary from "./pages/Vocabulary";
+import Dwarfs from "./pages/Dwarfs";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +20,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/game" element={<Game />} />
           <Route path="/vocabulary" element={<Vocabulary />} />
+          <Route path="/dwarfs" element={<Dwarfs />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
