@@ -120,7 +120,7 @@ export const VocabularyGame = () => {
   };
 
   useEffect(() => {
-    const timer = setInterval(nextWord, 5000); // Change word every 5 seconds
+    const timer = setInterval(nextWord, 50000); // Change word every 5 seconds
     return () => clearInterval(timer);
   }, []);
 
