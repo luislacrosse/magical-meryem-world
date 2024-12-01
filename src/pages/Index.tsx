@@ -1,7 +1,8 @@
 import { FloatingElements } from "@/components/FloatingElements";
 import { FavoriteThings } from "@/components/FavoriteThings";
-import { StarGame } from "@/components/StarGame";
-import { Star } from "lucide-react";
+import { Star, GamepadIcon } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 
 const Index = () => {
   return (
@@ -21,7 +22,14 @@ const Index = () => {
           <h2 className="font-bubblegum text-4xl text-center mb-8 text-vibrant-purple">
             Play with Me!
           </h2>
-          <StarGame />
+          <div className="flex justify-center">
+            <Link to="/game">
+              <Button className="bg-vibrant-purple hover:bg-vibrant-purple/90 gap-2 text-lg py-6 px-8">
+                <GamepadIcon className="w-6 h-6" />
+                Play Catch the Star!
+              </Button>
+            </Link>
+          </div>
         </section>
 
         <section>
