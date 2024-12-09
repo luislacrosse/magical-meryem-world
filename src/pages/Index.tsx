@@ -1,6 +1,6 @@
 import { FloatingElements } from "@/components/FloatingElements";
 import { FavoriteThings } from "@/components/FavoriteThings";
-import { Star, GamepadIcon, BookOpen, Users } from "lucide-react";
+import { Star, GamepadIcon, BookOpen, Users, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -22,7 +22,7 @@ const Index = () => {
           <h2 className="font-bubblegum text-4xl text-center mb-8 text-vibrant-purple">
             Play with Me!
           </h2>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center flex-wrap">
             <Link to="/game">
               <Button className="bg-vibrant-purple hover:bg-vibrant-purple/90 gap-2 text-lg py-6 px-8">
                 <GamepadIcon className="w-6 h-6" />
@@ -39,6 +39,12 @@ const Index = () => {
               <Button className="bg-vibrant-purple hover:bg-vibrant-purple/90 gap-2 text-lg py-6 px-8">
                 <Users className="w-6 h-6" />
                 Play with Dwarfs!
+              </Button>
+            </Link>
+            <Link to="/unicorn-story">
+              <Button className="bg-vibrant-purple hover:bg-vibrant-purple/90 gap-2 text-lg py-6 px-8">
+                <Sparkles className="w-6 h-6" />
+                Unicorn Story
               </Button>
             </Link>
           </div>

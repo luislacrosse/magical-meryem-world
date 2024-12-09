@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Game from "./pages/Game";
 import Vocabulary from "./pages/Vocabulary";
 import Dwarfs from "./pages/Dwarfs";
+import UnicornStory from "./pages/UnicornStory";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
           <Route path="/game" element={<Game />} />
           <Route path="/vocabulary" element={<Vocabulary />} />
           <Route path="/dwarfs" element={<Dwarfs />} />
+          <Route path="/unicorn-story" element={<UnicornStory />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
