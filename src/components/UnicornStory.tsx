@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const storyData = [
   {
@@ -48,12 +49,14 @@ export const UnicornStory = () => {
           
           <div className="animate-fade-in">
             <p className="text-lg mb-4 text-gray-700">{storyData[currentScene].text}</p>
-            <div className="w-full h-64 bg-soft-purple rounded-lg mb-4 flex items-center justify-center overflow-hidden">
-              <img
-                src={storyData[currentScene].img}
-                alt={storyData[currentScene].text}
-                className="w-full h-full object-cover"
-              />
+            <div className="mb-4 bg-soft-purple rounded-lg overflow-hidden">
+              <AspectRatio ratio={1}>
+                <img
+                  src={storyData[currentScene].img}
+                  alt={storyData[currentScene].text}
+                  className="w-full h-full object-cover"
+                />
+              </AspectRatio>
             </div>
           </div>
 
