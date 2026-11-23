@@ -1,0 +1,10 @@
+[build]
+  publish = "retired-site"
+  command = """mkdir -p retired-site &&
+printf '%s\\n' '<!doctype html><meta charset="utf-8"><title>Meryems magische Welt</title><a href="https://meryem.icu/">Open Meryems magische Welt</a>' > retired-site/index.html"""
+
+[[redirects]]
+  from = "/*"
+  to = "https://meryem.icu/:splat"
+  status = 301
+  force = true
