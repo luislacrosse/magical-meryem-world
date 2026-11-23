@@ -23,6 +23,12 @@ const Index = () => {
             Play with Me!
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center flex-wrap">
+            <Button asChild className="bg-vibrant-purple hover:bg-vibrant-purple/90 gap-2 text-lg py-6 px-8">
+              <a href="https://spiel.meryem.icu/">
+                <Sparkles className="w-6 h-6" aria-hidden="true" />
+                Play the Snow Fairy Game!
+              </a>
+            </Button>
             <Link to="/game">
               <Button className="bg-vibrant-purple hover:bg-vibrant-purple/90 gap-2 text-lg py-6 px-8">
                 <GamepadIcon className="w-6 h-6" />
